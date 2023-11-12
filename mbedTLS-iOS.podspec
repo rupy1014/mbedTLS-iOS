@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'mbedTLS-iOS/Classes/**/*'
+  s.source_files = 'mbedTLS-iOS/Classes/**/*', 'mbedTLS-iOS/Classes/include/**/*'
   
   # s.resource_bundles = {
   #   'mbedTLS-iOS' => ['mbedTLS-iOS/Assets/*.png']

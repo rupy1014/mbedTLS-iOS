@@ -1,0 +1,6 @@
+framework module mbedTLS_iOS {
+  umbrella header "mbedTLS-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

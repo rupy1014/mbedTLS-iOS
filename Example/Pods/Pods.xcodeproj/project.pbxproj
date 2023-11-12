@@ -1,0 +1,1265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00CE12BBE8CB6077C717A32B6DD2336B /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F5597CDAC3DE3E9546FFD838540DE26 /* sha1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04CCB6947904F11DDBDAD9095C497EE6 /* gcm.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A1F76DE9C315C6612DA2E129DD7ED54 /* gcm.c */; };
+		05CE61E92506CF3362A7D5B2CF5FFDB6 /* bn_mul.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C96BA488D81588E245CEFBDE638FF7D /* bn_mul.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06493DC68B74974E7F92407C5F4D89E6 /* cipher.c in Sources */ = {isa = PBXBuildFile; fileRef = EFB410D377BAF21FCEADD5FA121AA305 /* cipher.c */; };
+		08784E3DC746B01E11925BA16389D87C /* blowfish.c in Sources */ = {isa = PBXBuildFile; fileRef = CE70A4187FBB7E9EC6BBB07B5B604388 /* blowfish.c */; };
+		0B0347EA4D56420758511BF3BB38B8CD /* pem.h in Headers */ = {isa = PBXBuildFile; fileRef = CEE6324E093D05115DE682C7A3F1064B /* pem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D43682C16F4B6DE3E0A48A6CE4232B5 /* pkcs11.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ED17568D1C94F4FB101340C84CF909D /* pkcs11.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0EFD074DA0E2F6DBDC3368F12DFD8B9C /* asn1.h in Headers */ = {isa = PBXBuildFile; fileRef = 02934FF6C8877FA2B96116F3CAC4B292 /* asn1.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		107972E5568FC96D0637FD5BD1DF3678 /* cipher_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D57957BB3D9C4CA2CE3145B396EE02D /* cipher_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11BF7871ECBE1783C2873EB58C867345 /* des.h in Headers */ = {isa = PBXBuildFile; fileRef = 00DA4CB8A1DBEBD860D5FAFC360A01D7 /* des.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13AC866DDD86280AA2FB01900B5AFCF7 /* debug.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FE7EAFC0F62BB0C9D49E35C65F16505 /* debug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14DB005DE6B00194C422DB6E36140789 /* bignum.c in Sources */ = {isa = PBXBuildFile; fileRef = C34E404BB5A93CB1A31B6630B3597A81 /* bignum.c */; };
+		14F5CF84B15F125AB8BE3D788318BAB1 /* check_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 08FB1EBCF55FBFB25930B78DE025D414 /* check_config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15FB2BD14D83C42D2D14E0F28DCF66D7 /* xtea.h in Headers */ = {isa = PBXBuildFile; fileRef = 332F792D6A15F25E9D8CC82FBE188C4C /* xtea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E35EDE0E5750801D59E7A7CDE7CCA2 /* cipher.h in Headers */ = {isa = PBXBuildFile; fileRef = 579ACACEB7DB2AE6FC94D05E867575FE /* cipher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AC75053815C8EC4F2A94744A67C0BEB /* pkcs11.c in Sources */ = {isa = PBXBuildFile; fileRef = 39C3FD70FC7DF53552EDA373DB019B1E /* pkcs11.c */; };
+		1B48BAC8D2EC422775F76FA130E517B1 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = B61A42E2B41C8B3ED9E57E18F4850B9A /* config.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B84F0688729313AD9C5B1AFE4E2F745 /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = 041FED889F59FF2775768CFA70B6E9D5 /* md4.c */; };
+		1C2C7AE1947F1AFDE97676F8EB590B20 /* x509_crl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5239730FB62509221E08D00F29AAE95A /* x509_crl.c */; };
+		1C676209EB82ACA10355A95601F7BCD4 /* ecp_curves.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D1E1319FDF9B5C0252EAA62EE55DC2A /* ecp_curves.c */; };
+		1CBEB976B93D091C9A1B6F6192E50A5A /* aesni.c in Sources */ = {isa = PBXBuildFile; fileRef = 416D1824B022F85F3F87F048E7ADCB96 /* aesni.c */; };
+		1F3737A276D1A2FA595629EF68B982AC /* pk.c in Sources */ = {isa = PBXBuildFile; fileRef = C022012FB7D332846D6CAF1C1BD855EB /* pk.c */; };
+		1F3C2B7FC3C05D06214D8437BE057465 /* sha512.c in Sources */ = {isa = PBXBuildFile; fileRef = B0539250C0C8B5D63AF3FD308A8DA27C /* sha512.c */; };
+		20A06A9BF5F3387659D881A4DCEBB73E /* threading.c in Sources */ = {isa = PBXBuildFile; fileRef = 967352642ACD55F531B4609A596E423F /* threading.c */; };
+		22AEDAE4111CE2D0172D68028B13AB57 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 066353F976AD22450A4F82E7160758E1 /* ReplaceMe.m */; };
+		2495D06A6FDAC16B708A6AAC043D5AE1 /* ecdh.c in Sources */ = {isa = PBXBuildFile; fileRef = 232BDC83A73219FC99FDA011E2EDFD7E /* ecdh.c */; };
+		3135A25B11C59873458607F2A05DCCBE /* ssl_srv.c in Sources */ = {isa = PBXBuildFile; fileRef = 187358DBDB794507882D773E79E21E5D /* ssl_srv.c */; };
+		320FB149CF1F584AEE9230468392CEE7 /* chacha20.h in Headers */ = {isa = PBXBuildFile; fileRef = 3118D38136DA7C9E0AC3BCA96A7B24CC /* chacha20.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3367955A6AB6DEAE8C75084CE9C3C38E /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA0BC09C2971C94145F56051E46056F /* sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3687F5FAA659E1AA7A84EB2B776F84C1 /* net_sockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DF36223600F30777FCD1AB933965A56 /* net_sockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		374724D40C298F8CCDBF6FE6AD7F0D84 /* ecp_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 06BE434B243B4417FB6C944CD7AF4542 /* ecp_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38625B39C68FA96E757A6060C3470C3A /* arc4.h in Headers */ = {isa = PBXBuildFile; fileRef = F3AAE25900A4A8A9552EF5EE58EFECA1 /* arc4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F4B43E8B131D675E17E1D06AD7BBCF1 /* ssl.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C5553130DBED022BDB438EA6C29F5B0 /* ssl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3FDAA0D0FB76DF5296A8A947105D72E2 /* debug.c in Sources */ = {isa = PBXBuildFile; fileRef = 16459D0D59853890A48E17369636091C /* debug.c */; };
+		424D7ACFE60A4388F5C0EABA961AE763 /* oid.c in Sources */ = {isa = PBXBuildFile; fileRef = 10B244462A089FA0B8033AFEA9366ABB /* oid.c */; };
+		431B145FF058CD4D3D66F81DD7B831E8 /* hmac_drbg.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB6124A8D2D3C4F6E46AA6914511C82 /* hmac_drbg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45062F256E2A116DC543433696C222AF /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = 603EE25EED04F683A59533A107A0CA5F /* version.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		485DA77DDF008A761E9544D709939AD7 /* ssl_cache.c in Sources */ = {isa = PBXBuildFile; fileRef = 27D00A30D7A13E7EAC1B1623D6489A1E /* ssl_cache.c */; };
+		48D3F252DF43E24CCB57A7BED58BE850 /* dhm.c in Sources */ = {isa = PBXBuildFile; fileRef = D28C4C226254470C8E0A5E7B03AB07A9 /* dhm.c */; };
+		48FFD7EFED9DC3606B663CE528153885 /* pkparse.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F392D0E7F361E08FA8989C399803BBE /* pkparse.c */; };
+		4B9EF5C984FC04F67142758E8DCAD864 /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E0D0D76BEFD7D7333FFD0B02BFA7941 /* md4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C2FF7DB01813359A8E3776186BC7C0E /* Pods-mbedTLS-iOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7B238E433642A189F9CB8BCE8FDD3AC /* Pods-mbedTLS-iOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D13F48704F58342710B1FC9A6DBA6A3 /* pk_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = F2BDDACE98E4882E26BFEF8CC6A55F8D /* pk_wrap.c */; };
+		4E8013322D4456165030ED7A260C6EDA /* bignum.h in Headers */ = {isa = PBXBuildFile; fileRef = 07C8CE985BC120BE611B0071531EB310 /* bignum.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		516EE33D3796DA2A8B2007C512658393 /* arc4.c in Sources */ = {isa = PBXBuildFile; fileRef = 551A8FF1889DBD349287CE5DBD364F2F /* arc4.c */; };
+		546E2861CB22AF7CCB57BE8A617316FF /* ctr_drbg.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1E0BF5F196EB0B4AA35CDD66243B9B /* ctr_drbg.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D47D133CF02318450F442EB6336D14 /* ssl_tls.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D773FE5E75CE415BA957759889ED8D5 /* ssl_tls.c */; };
+		571E0C8748150736100D55FE611A6F3E /* cipher_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E91AE1FBBCDC84FB92B6C3EF2381963 /* cipher_wrap.c */; };
+		577C7C4DECCE0D22C4B6A630DF0FE67C /* timing.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD197366C4542BBA8F57A2BE2D1E79 /* timing.c */; };
+		580BA5A1CA34C8F138852C450BB524FE /* ssl_cookie.c in Sources */ = {isa = PBXBuildFile; fileRef = 8376444CB0678DF06C2C45C212EC07D5 /* ssl_cookie.c */; };
+		59F2BCE7DB141F0EF2BF280F6126237F /* pk.h in Headers */ = {isa = PBXBuildFile; fileRef = 941D1C129FF76CDF298A44874C2FC9C6 /* pk.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B0F285412081F108C32F193892E32F5 /* asn1write.c in Sources */ = {isa = PBXBuildFile; fileRef = 95F087961E08F76A96BAA890594F73D6 /* asn1write.c */; };
+		5B951625D1D6FA54E5237994DF37DFD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		5D2D2B0FEA04B3550C3A1FEDF433C577 /* ccm.c in Sources */ = {isa = PBXBuildFile; fileRef = 3DFFBBBFBDB9ADE660EFBAA1F4E54018 /* ccm.c */; };
+		5D5455096A606BA77C1E7275F974CAEB /* x509write_crt.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DDB969040F435245319936ADACD6026 /* x509write_crt.c */; };
+		5E7AA5F960C345B9C9592A1746438056 /* nist_kw.c in Sources */ = {isa = PBXBuildFile; fileRef = 416F685E01D3459094E92D4A2B7EDFAF /* nist_kw.c */; };
+		63C5CF5C2A5A55A5692DA47269F91E4A /* md.h in Headers */ = {isa = PBXBuildFile; fileRef = 952E4CBC6B00B76C0EF632E9DB886066 /* md.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65F058488087E62485BC233364015771 /* platform.c in Sources */ = {isa = PBXBuildFile; fileRef = 74AAC9A3BD39CA92B2CE7E40E546FF20 /* platform.c */; };
+		676D0B370E02E15D831650C26491C06B /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = C55C0F019F21195C26A6C032C120E321 /* entropy.c */; };
+		68D0B218122B894E99EC1DA91652F2CB /* ssl_ciphersuites.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DBC6B5007509E524761B4FFE47C3F42 /* ssl_ciphersuites.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68F1102F0C13BC71B49B994512ED64E5 /* ecjpake.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B26BAE62527950852F5DC62ED5E829E /* ecjpake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BFB86C42C6E6D1D08324C144F075838 /* aria.h in Headers */ = {isa = PBXBuildFile; fileRef = 10825FD8A7C0FF797846F937452FC9D6 /* aria.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CFB4214CBBC8D3A07F76AE8E3B6F96E /* camellia.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F50F82C6E23A2CC6FEEA201E630EB1D /* camellia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E1237A9FC6F420579DA18489B0C7A57 /* cmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 632436415E5772F47200A57A45A9E16D /* cmac.c */; };
+		6ED965B484C87644925F6228E0BDEFCC /* aria.c in Sources */ = {isa = PBXBuildFile; fileRef = 658A4551D37E3723E4A563D093AC4D67 /* aria.c */; };
+		6F01EA2D4840F09A709C4F201AAA8C6F /* dhm.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B367FF54A0825ADCDE1211F16C9D7FF /* dhm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F38C331115C6505EDA185980A62249D /* ssl_ciphersuites.c in Sources */ = {isa = PBXBuildFile; fileRef = B43AAAE4D5F1E45E1F6B57F39D214483 /* ssl_ciphersuites.c */; };
+		6F993F88E9D28647F77C5D110AD0E584 /* x509_crt.h in Headers */ = {isa = PBXBuildFile; fileRef = 806DA58E338907A26C6E372F88A729DA /* x509_crt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70A754F6C08CACE8A58B76BE0C7F8C03 /* platform_time.h in Headers */ = {isa = PBXBuildFile; fileRef = 3627A47CEBFA041D79607761A8B2B248 /* platform_time.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		722C1D28D475D9D2D1836EF8DA900D09 /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F0535EAFC47708C2BE4D06220EC9685 /* aes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		74A6102E702D29E0853CA22E97E4D13A /* havege.c in Sources */ = {isa = PBXBuildFile; fileRef = 6D8825FDCF3C9131BBBA9335FC4750FB /* havege.c */; };
+		768CC2C39F744CED43DAFB7F52B6D75A /* x509.c in Sources */ = {isa = PBXBuildFile; fileRef = A834C03F45FD071D6CC1C27BD9204C02 /* x509.c */; };
+		7A8844CACF9E2ECB9D4F16F4254E5C72 /* hmac_drbg.c in Sources */ = {isa = PBXBuildFile; fileRef = 55233862F49A62B3428A6699D1E5E14B /* hmac_drbg.c */; };
+		7AC08661114F16092DAC69E652D0A747 /* compat-1.3.h in Headers */ = {isa = PBXBuildFile; fileRef = 72D0B8D94960835B393E4A67F37E8B83 /* compat-1.3.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C166BCD304FEC3902C6676B37757008 /* ecdsa.h in Headers */ = {isa = PBXBuildFile; fileRef = D516C07983F80D135E05306C1A76E008 /* ecdsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D8F7F57ABF6EC8CB6DA6EF88407036E /* pkwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 41F71CAF454971C622E98E8B83D37F55 /* pkwrite.c */; };
+		7E220AC5F8611C2ED8D1BDF06A5E907C /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCA51172B84C1F872BA46F9DDBC74E /* error.c */; };
+		84C2E17DE6DD241CF0136705400ADD53 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = 9269E1585F930ABACE22DFE3379AFE7A /* sha256.c */; };
+		8929820D86EC8B67A49D31CD0B595DBC /* chacha20.c in Sources */ = {isa = PBXBuildFile; fileRef = B5F1899F34323720A8408128988372F8 /* chacha20.c */; };
+		8F676D5690B4B0C055AE4B104C261AFC /* ecjpake.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C7B7A2A3E5BF79D018E6F618A553B7F /* ecjpake.c */; };
+		903D89412BA7E9A30039A8DC60733EE3 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 5D566454576016D67FA0DD864E6A867E /* md5.c */; };
+		909A275585B8C8EF8DE9B022FDDC5542 /* poly1305.h in Headers */ = {isa = PBXBuildFile; fileRef = F9E1066A02D190A8C030098F9E7CC897 /* poly1305.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93002437311F72365542137E53F5C407 /* ecdsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 12E0C57B267D07E93568AFA68A88B4E1 /* ecdsa.c */; };
+		932C156752EBC040C2758C1766CB9548 /* hkdf.h in Headers */ = {isa = PBXBuildFile; fileRef = E2E78C5D7BA506BC1B8406DFEEEFF8A8 /* hkdf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94D051F76283B697829843AA7A29E62B /* ripemd160.c in Sources */ = {isa = PBXBuildFile; fileRef = 027D5EA1434C05FABA2DB08E758741E6 /* ripemd160.c */; };
+		9507738C44E956036785DB99DAE9CF4F /* certs.c in Sources */ = {isa = PBXBuildFile; fileRef = 50E731615C210ABE13F58464487AE49C /* certs.c */; };
+		95E9255BD1E604F758245E5E45FD2A87 /* timing.h in Headers */ = {isa = PBXBuildFile; fileRef = 11A9FD83577F8AA00F84FF5B1C10AB3F /* timing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96FC7D9B031E1C695E383C94D6946666 /* md2.c in Sources */ = {isa = PBXBuildFile; fileRef = EFD24BDD1446A41565172EE961D288D9 /* md2.c */; };
+		97E509EB1927F6B1E9CEAC123D7C34DB /* base64.h in Headers */ = {isa = PBXBuildFile; fileRef = 9906A93AD29EB65E4CA1E1A04DCE3B14 /* base64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		986D696F9AD63100102393C13F6D3DFC /* rsa_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D6A7A3F6EDAC342EEFAA808997187FE /* rsa_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		998ABE71101DF891C79AA6EB9694F581 /* asn1parse.c in Sources */ = {isa = PBXBuildFile; fileRef = C4BB03FBAC2E8ECCCDBB9278E1DD9FED /* asn1parse.c */; };
+		99DD0F42E0DEAC2EB52DF83B968CE2F3 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FF91C3729CAA94E342F9889FAEE1187 /* error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DA4CB20844FE566516048E04C84ABAA /* ssl_cache.h in Headers */ = {isa = PBXBuildFile; fileRef = D05CDB7C7756990A4011973F85C233DE /* ssl_cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F11FE462EB4975DC225638FF103C756 /* ecp.h in Headers */ = {isa = PBXBuildFile; fileRef = E74A8E601E0C61E81A3DF7F45C2F3B34 /* ecp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A11D56D4226EEA64030843E9E33C8D29 /* rsa.h in Headers */ = {isa = PBXBuildFile; fileRef = 868869F1FC4BCAC70A8D3AB7482B268C /* rsa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1D73225FAE6BDFD361ABC4C839BF41D /* x509_crt.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FBFF4DBCFE2C421692993836E0C5EA7 /* x509_crt.c */; };
+		A242A2DD61A9A96566474D66B1145AC8 /* camellia.c in Sources */ = {isa = PBXBuildFile; fileRef = 4FA856AF2C7BC1397A718CAA2AFB9CCC /* camellia.c */; };
+		A5120791ABB8C9FF1450E489AE80D128 /* aesni.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EBC7D05DCF839198B11CB1B22279B19 /* aesni.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5F7A4A19DDD2A05BA4325EF60BDFF00 /* threading.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0CA35AD09B32F4CF0FFF557C61529F /* threading.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7195799AD31A43E3FACEE74FCA18B9C /* pkcs5.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C833716167ADE601793559C486ABD15 /* pkcs5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7D668D1B8CB809F82CFB792EFA95627 /* asn1write.h in Headers */ = {isa = PBXBuildFile; fileRef = 6802B77FA87E9931EE113A1C04D097FB /* asn1write.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A820545A06A94C94A465C7E5DECCA6C9 /* md_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 1E75325C373394B0E804F5B23B7255E1 /* md_wrap.c */; };
+		A88E39DCDE2A71C4316B9970E394169E /* pem.c in Sources */ = {isa = PBXBuildFile; fileRef = 60D1733928E845A47E4390266CD59D78 /* pem.c */; };
+		AB8301B7E775574454C5931C4FB6B7F1 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = A00E8013313B6C48E7FF6FBA3D608F28 /* platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC080415868FA220F32621BD13F0D1D6 /* padlock.c in Sources */ = {isa = PBXBuildFile; fileRef = E6666AA689AF2BA66898A576F5DB5702 /* padlock.c */; };
+		AC140C0D04CE21F56786A2348EACC7CA /* mbedTLS-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD6A08EC427517F5B19BE1E93B83911 /* mbedTLS-iOS-dummy.m */; };
+		AD59418BD3771AE4157D37360C336705 /* poly1305.c in Sources */ = {isa = PBXBuildFile; fileRef = 129B9C83BB5324275D708EF0195CF31A /* poly1305.c */; };
+		B149D70561883DD1390C3E459B9C7D96 /* x509_crl.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F106854B8937C7D622C847946A55D24 /* x509_crl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B19B1497128FD77852D9505FB4573247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B30478371CBBF7F4D5A8E2A24FB5262A /* rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0F8E2F15F900B0EF9B9F228CE9F9F /* rsa.c */; };
+		B4210C94B17979A6C3E64D42486F6FC2 /* pk_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 31D1BEF5418429083BEF49D7D6E85B20 /* pk_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B61B0B9C60B7A75B6B8CD88A979B077D /* pkcs5.c in Sources */ = {isa = PBXBuildFile; fileRef = 73B78A8CDFD8AC5E1E3FD29BD61CE9E9 /* pkcs5.c */; };
+		B874A94EFE6908905E8433EB4AECBE49 /* ssl_ticket.c in Sources */ = {isa = PBXBuildFile; fileRef = B47B0BC31752324A9DCD52D9EA5CA7A6 /* ssl_ticket.c */; };
+		B8A4D5CFB327B2BF8DD1748A2CEDB711 /* entropy_poll.h in Headers */ = {isa = PBXBuildFile; fileRef = 68DAE8A15F7E833FDDA7758271C02E8A /* entropy_poll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA808403739AFF63EB81AA4D36368D1B /* chachapoly.c in Sources */ = {isa = PBXBuildFile; fileRef = 126D9221926666317C9FC53E67533746 /* chachapoly.c */; };
+		BAC82147FCE5F25B61B440984B948F2A /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = FE62048E6E4F1975ACE94AFC9A9F61AA /* version.c */; };
+		BE57063D94BA7B3944A28BC9D9D7D320 /* x509_create.c in Sources */ = {isa = PBXBuildFile; fileRef = 04984C6CEDB8EA1B25A00F6395D6EE33 /* x509_create.c */; };
+		BE9AD82A821B1CF302895788A9ECFB8E /* platform_util.c in Sources */ = {isa = PBXBuildFile; fileRef = DFBDE457CA8FED280F5DFBA447E5371C /* platform_util.c */; };
+		BF267FCD9A698AA87B5789B0E9756FD0 /* padlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 567463DFA4B7EEE06E2D6AE4FEC7F287 /* padlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFCFB2309381099F2B8D5183D2870CA4 /* mbedTLS-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF1465DDF27FDA6DCEBA02FCCDEA87E0 /* mbedTLS-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C19F97CBC46AE35C8FD5DF0D6F8DC3EA /* net_sockets.c in Sources */ = {isa = PBXBuildFile; fileRef = A7DAF8D4A1CCCCC3759E33AB7903B602 /* net_sockets.c */; };
+		C5A5DFA8FE53D1D4126EDEC8B4F3B22E /* memory_buffer_alloc.h in Headers */ = {isa = PBXBuildFile; fileRef = F55D628E987DFB8A4A308226A48EC683 /* memory_buffer_alloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FDAF2C326D3C59369B5712CD629B54 /* md2.h in Headers */ = {isa = PBXBuildFile; fileRef = B8664CB7BB570B8F6FEBD96F95160789 /* md2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAAD0E583685833ADFC942DE7E9BEC2F /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = B192266E056CE5D5FF63D20D7CE256F4 /* entropy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD25D3E683CD157737342894BBEE736A /* pkcs12.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DF8FE01464CB83AC0CC77EF0917962A /* pkcs12.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2106B2E120BEB270D9C2B1A04A9E412 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = 216312CE131D2C0AE7694C1D6FD23512 /* base64.c */; };
+		D560620FD10E1762E3F4775F7CEA6224 /* x509_csr.c in Sources */ = {isa = PBXBuildFile; fileRef = 55D673FB6CC711D9E490166DB5653832 /* x509_csr.c */; };
+		D6DD950C3597F557AFD0356C878151B0 /* Pods-mbedTLS-iOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6094F2A2DD0FC938C4B4EB42631BAE29 /* Pods-mbedTLS-iOS_Tests-dummy.m */; };
+		D7ECDEEEBDBD8D255D1FA7005A246ECB /* certs.h in Headers */ = {isa = PBXBuildFile; fileRef = E3339D09D6C4D7916C6F5553DF301B96 /* certs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9373D2075681B2618BCE3B6D79CFBE7 /* entropy_poll.c in Sources */ = {isa = PBXBuildFile; fileRef = C26B6FBC20805F12B91C1561849829E8 /* entropy_poll.c */; };
+		DA0E39735F1A5C5AE00C7C864325F293 /* ssl_ticket.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B4717DDE0E308D57BB9939C8FCD97BB /* ssl_ticket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD9CCC5DCC871CD7F38740E73758EC2F /* havege.h in Headers */ = {isa = PBXBuildFile; fileRef = C7BD54163F5F8F3E39ACBE6E53596E75 /* havege.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEB116BA4F19FC098989C718EA6A1894 /* ripemd160.h in Headers */ = {isa = PBXBuildFile; fileRef = E9931A4214A9AEFC86C47243BD7FE23B /* ripemd160.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEE7B2845E20F26497481988CE1A3BAB /* memory_buffer_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = F203E782058DA9D4E7556C5C5845FBD6 /* memory_buffer_alloc.c */; };
+		DFFC531143C6363B7316532A0F3C1547 /* pkcs12.c in Sources */ = {isa = PBXBuildFile; fileRef = BD14A014312240DFF7C3940D6C596096 /* pkcs12.c */; };
+		E0C630665BD1C2B675E29160D4916322 /* net.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FFE18CACE9C0161650E223FA35A55D9 /* net.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E29509F82044C765C31C5FA951C7B4E0 /* ecdh.h in Headers */ = {isa = PBXBuildFile; fileRef = 35326A464078F396337ACF012984A16F /* ecdh.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E31B5AD3DE3D1C1D20D70EACAF9902A5 /* chachapoly.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CC9B10502DACC9592057D10A0F163B2 /* chachapoly.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E3B85D87303146F9225144853A3A129C /* oid.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EAD5757A8409A44999AF56453B4CECB /* oid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E55D3037C25DBB27F692417283B49049 /* ssl_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = FD584BF2B1BC27CFC68B60D926D35A82 /* ssl_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E867BD2A84438811C8F64700B13768BC /* md.c in Sources */ = {isa = PBXBuildFile; fileRef = 0C51127E3F13AD1D4E6EE3F0EC3490D5 /* md.c */; };
+		E8F33987C9A663342F1F49945721BF6A /* ccm.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FA14C3D445EF0C9BC1400491658476 /* ccm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9E7EAACE73498F119DDD47117666F0D /* platform_util.h in Headers */ = {isa = PBXBuildFile; fileRef = 748075BD040E53951ABFDED671BCBC5D /* platform_util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9EFC657CA91F7331433C260D1783345 /* ctr_drbg.c in Sources */ = {isa = PBXBuildFile; fileRef = 9312114CB29DEC43103C4500185CDB0E /* ctr_drbg.c */; };
+		ECC9EAF79A8C67369E820D79AE488A60 /* cmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 8436517422477DB8C5533C097D1F8981 /* cmac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED3EE9290E3E721D19977CB67DDDE79D /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = BACF2530D33815108E3ADC81035F0684 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDDE4F0927C92B3B11245F2F4D15C53E /* x509.h in Headers */ = {isa = PBXBuildFile; fileRef = 69110D5ABDD9A585103091D093FA11F9 /* x509.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDECC7A66E4ACFAFFFAF725B4F119295 /* x509write_csr.c in Sources */ = {isa = PBXBuildFile; fileRef = 030CB1C42B72C2420FB2D14732A4F705 /* x509write_csr.c */; };
+		EE274C794CA325416016F2B9EB76114F /* ssl_cli.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E525EC9B96F00F9EB68494BDA8D6270 /* ssl_cli.c */; };
+		EE389CC5FEF880479CEA2E4241585D93 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 0483E1B325B24844078244720F3BD1D0 /* sha1.c */; };
+		EE3C37CDF32083863A77F0FAA9B85999 /* md_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD2F60D855547117C59867CF4183734 /* md_internal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F00B553CF76F0E5D7728EE0C121AEE5C /* blowfish.h in Headers */ = {isa = PBXBuildFile; fileRef = 5893222A0E78E7E7E0049974FB71EC1B /* blowfish.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F050B60EAFC2EAC012E6B4C4952221AD /* gcm.h in Headers */ = {isa = PBXBuildFile; fileRef = EC83E314CE18D1C9140698E57D3FB28F /* gcm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4DFAE8EAACC1688BC5768F9F044ACE2 /* version_features.c in Sources */ = {isa = PBXBuildFile; fileRef = DB8279327063030F3E7FC1B652159223 /* version_features.c */; };
+		F52E9F027A74B234B4E8683029628EFD /* sha512.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FB2E1499EB1CED7A49D15FB5BE9461D /* sha512.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F94CC1989B6A657ABB860F80918ABBDA /* ecp.c in Sources */ = {isa = PBXBuildFile; fileRef = E4B2B6835E8FB2AA59D0011D22D35D14 /* ecp.c */; };
+		F96DC547543C34EBA5275BC17D8A3E3A /* des.c in Sources */ = {isa = PBXBuildFile; fileRef = 2943176A5A2C84CA6034D784274AB2C9 /* des.c */; };
+		F98881D4BA96540E1C1316FD44035737 /* aes.c in Sources */ = {isa = PBXBuildFile; fileRef = BED5C4C780C6680BCD7DE32F7F6E77AC /* aes.c */; };
+		FAECF66C5C2D61F8D7076E9AA6AD6CF4 /* ssl_cookie.h in Headers */ = {isa = PBXBuildFile; fileRef = 449B8230BA4A4275812F7BE76DBA4738 /* ssl_cookie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB1D2A0745BE99FE531D3838B03E0800 /* x509_csr.h in Headers */ = {isa = PBXBuildFile; fileRef = 084B1DB81D2F0B8883FF10619387648E /* x509_csr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC2DCA380E13A32BD1E8BBD710063432 /* hkdf.c in Sources */ = {isa = PBXBuildFile; fileRef = 1143B7D0148BEBCF68F010686935226B /* hkdf.c */; };
+		FD036516E9129A72F82970625DB55715 /* rsa_internal.c in Sources */ = {isa = PBXBuildFile; fileRef = FE9FF8E9882F928C21DD4EA803EC5608 /* rsa_internal.c */; };
+		FD1C9635876EF4057A2AE364DCD6EED5 /* nist_kw.h in Headers */ = {isa = PBXBuildFile; fileRef = 7091887361CF61AE05E468F1FFDE821F /* nist_kw.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEF88FEA26948AF4C2359E6E666947DD /* xtea.c in Sources */ = {isa = PBXBuildFile; fileRef = 13918C69917E555FF531C4D85DDA002E /* xtea.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83252F95DF22456B1E19D613E53F63C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81B7B865E7F83CDEC1775778556CEBDC;
+			remoteInfo = "mbedTLS-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00DA4CB8A1DBEBD860D5FAFC360A01D7 /* des.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		027D5EA1434C05FABA2DB08E758741E6 /* ripemd160.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ripemd160.c; sourceTree = "<group>"; };
+		02934FF6C8877FA2B96116F3CAC4B292 /* asn1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		030CB1C42B72C2420FB2D14732A4F705 /* x509write_csr.c */ = {isa = PBXFileReference; includeInIndex = 1; path = x509write_csr.c; sourceTree = "<group>"; };
+		041FED889F59FF2775768CFA70B6E9D5 /* md4.c */ = {isa = PBXFileReference; includeInIndex = 1; path = md4.c; sourceTree = "<group>"; };
+		0483E1B325B24844078244720F3BD1D0 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sha1.c; sourceTree = "<group>"; };
+		04984C6CEDB8EA1B25A00F6395D6EE33 /* x509_create.c */ = {isa = PBXFileReference; includeInIndex = 1; path = x509_create.c; sourceTree = "<group>"; };
+		066353F976AD22450A4F82E7160758E1 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = "mbedTLS-iOS/Classes/ReplaceMe.m"; sourceTree = "<group>"; };
+		06BE434B243B4417FB6C944CD7AF4542 /* ecp_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecp_internal.h; sourceTree = "<group>"; };
+		07C8CE985BC120BE611B0071531EB310 /* bignum.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bignum.h; sourceTree = "<group>"; };
+		084B1DB81D2F0B8883FF10619387648E /* x509_csr.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509_csr.h; sourceTree = "<group>"; };
+		08FB1EBCF55FBFB25930B78DE025D414 /* check_config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = check_config.h; sourceTree = "<group>"; };
+		0AA0F8E2F15F900B0EF9B9F228CE9F9F /* rsa.c */ = {isa = PBXFileReference; includeInIndex = 1; path = rsa.c; sourceTree = "<group>"; };
+		0AFD197366C4542BBA8F57A2BE2D1E79 /* timing.c */ = {isa = PBXFileReference; includeInIndex = 1; path = timing.c; sourceTree = "<group>"; };
+		0B4717DDE0E308D57BB9939C8FCD97BB /* ssl_ticket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl_ticket.h; sourceTree = "<group>"; };
+		0C51127E3F13AD1D4E6EE3F0EC3490D5 /* md.c */ = {isa = PBXFileReference; includeInIndex = 1; path = md.c; sourceTree = "<group>"; };
+		0C96BA488D81588E245CEFBDE638FF7D /* bn_mul.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = bn_mul.h; sourceTree = "<group>"; };
+		0E91AE1FBBCDC84FB92B6C3EF2381963 /* cipher_wrap.c */ = {isa = PBXFileReference; includeInIndex = 1; path = cipher_wrap.c; sourceTree = "<group>"; };
+		0FBFF4DBCFE2C421692993836E0C5EA7 /* x509_crt.c */ = {isa = PBXFileReference; includeInIndex = 1; path = x509_crt.c; sourceTree = "<group>"; };
+		0FF91C3729CAA94E342F9889FAEE1187 /* error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = error.h; sourceTree = "<group>"; };
+		10825FD8A7C0FF797846F937452FC9D6 /* aria.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aria.h; sourceTree = "<group>"; };
+		10B244462A089FA0B8033AFEA9366ABB /* oid.c */ = {isa = PBXFileReference; includeInIndex = 1; path = oid.c; sourceTree = "<group>"; };
+		1143B7D0148BEBCF68F010686935226B /* hkdf.c */ = {isa = PBXFileReference; includeInIndex = 1; path = hkdf.c; sourceTree = "<group>"; };
+		11A9FD83577F8AA00F84FF5B1C10AB3F /* timing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = timing.h; sourceTree = "<group>"; };
+		126D9221926666317C9FC53E67533746 /* chachapoly.c */ = {isa = PBXFileReference; includeInIndex = 1; path = chachapoly.c; sourceTree = "<group>"; };
+		129B9C83BB5324275D708EF0195CF31A /* poly1305.c */ = {isa = PBXFileReference; includeInIndex = 1; path = poly1305.c; sourceTree = "<group>"; };
+		12E0C57B267D07E93568AFA68A88B4E1 /* ecdsa.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ecdsa.c; sourceTree = "<group>"; };
+		13918C69917E555FF531C4D85DDA002E /* xtea.c */ = {isa = PBXFileReference; includeInIndex = 1; path = xtea.c; sourceTree = "<group>"; };
+		16459D0D59853890A48E17369636091C /* debug.c */ = {isa = PBXFileReference; includeInIndex = 1; path = debug.c; sourceTree = "<group>"; };
+		187358DBDB794507882D773E79E21E5D /* ssl_srv.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ssl_srv.c; sourceTree = "<group>"; };
+		1C5553130DBED022BDB438EA6C29F5B0 /* ssl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		1C7B7A2A3E5BF79D018E6F618A553B7F /* ecjpake.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ecjpake.c; sourceTree = "<group>"; };
+		1DD6A08EC427517F5B19BE1E93B83911 /* mbedTLS-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mbedTLS-iOS-dummy.m"; sourceTree = "<group>"; };
+		1E0D0D76BEFD7D7333FFD0B02BFA7941 /* md4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		1E75325C373394B0E804F5B23B7255E1 /* md_wrap.c */ = {isa = PBXFileReference; includeInIndex = 1; path = md_wrap.c; sourceTree = "<group>"; };
+		216312CE131D2C0AE7694C1D6FD23512 /* base64.c */ = {isa = PBXFileReference; includeInIndex = 1; path = base64.c; sourceTree = "<group>"; };
+		22D9E5F83AEA943C0DC2BCBE2EEE9236 /* mbedTLS-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "mbedTLS-iOS"; path = mbedTLS_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		232BDC83A73219FC99FDA011E2EDFD7E /* ecdh.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ecdh.c; sourceTree = "<group>"; };
+		27D00A30D7A13E7EAC1B1623D6489A1E /* ssl_cache.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ssl_cache.c; sourceTree = "<group>"; };
+		2943176A5A2C84CA6034D784274AB2C9 /* des.c */ = {isa = PBXFileReference; includeInIndex = 1; path = des.c; sourceTree = "<group>"; };
+		2B367FF54A0825ADCDE1211F16C9D7FF /* dhm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = dhm.h; sourceTree = "<group>"; };
+		2BA0BC09C2971C94145F56051E46056F /* sha256.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		2EBC7D05DCF839198B11CB1B22279B19 /* aesni.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aesni.h; sourceTree = "<group>"; };
+		2ECCA51172B84C1F872BA46F9DDBC74E /* error.c */ = {isa = PBXFileReference; includeInIndex = 1; path = error.c; sourceTree = "<group>"; };
+		2F392D0E7F361E08FA8989C399803BBE /* pkparse.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pkparse.c; sourceTree = "<group>"; };
+		3118D38136DA7C9E0AC3BCA96A7B24CC /* chacha20.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = chacha20.h; sourceTree = "<group>"; };
+		318F1CC6AAE49F434266BE3C64D029E2 /* mbedTLS-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mbedTLS-iOS-prefix.pch"; sourceTree = "<group>"; };
+		31D1BEF5418429083BEF49D7D6E85B20 /* pk_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pk_internal.h; sourceTree = "<group>"; };
+		332F792D6A15F25E9D8CC82FBE188C4C /* xtea.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = xtea.h; sourceTree = "<group>"; };
+		35326A464078F396337ACF012984A16F /* ecdh.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		3627A47CEBFA041D79607761A8B2B248 /* platform_time.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = platform_time.h; sourceTree = "<group>"; };
+		37491796018E24084845E3861DD92A91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		39C3FD70FC7DF53552EDA373DB019B1E /* pkcs11.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pkcs11.c; sourceTree = "<group>"; };
+		3CC9B10502DACC9592057D10A0F163B2 /* chachapoly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = chachapoly.h; sourceTree = "<group>"; };
+		3D57957BB3D9C4CA2CE3145B396EE02D /* cipher_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cipher_internal.h; sourceTree = "<group>"; };
+		3DFFBBBFBDB9ADE660EFBAA1F4E54018 /* ccm.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ccm.c; sourceTree = "<group>"; };
+		3EAD5757A8409A44999AF56453B4CECB /* oid.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = oid.h; sourceTree = "<group>"; };
+		3FFE18CACE9C0161650E223FA35A55D9 /* net.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = net.h; sourceTree = "<group>"; };
+		416D1824B022F85F3F87F048E7ADCB96 /* aesni.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aesni.c; sourceTree = "<group>"; };
+		416F685E01D3459094E92D4A2B7EDFAF /* nist_kw.c */ = {isa = PBXFileReference; includeInIndex = 1; path = nist_kw.c; sourceTree = "<group>"; };
+		41F71CAF454971C622E98E8B83D37F55 /* pkwrite.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pkwrite.c; sourceTree = "<group>"; };
+		449B8230BA4A4275812F7BE76DBA4738 /* ssl_cookie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl_cookie.h; sourceTree = "<group>"; };
+		4700AF7689171E8DA45F2A85D9C8E144 /* Pods-mbedTLS-iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mbedTLS-iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B26BAE62527950852F5DC62ED5E829E /* ecjpake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecjpake.h; sourceTree = "<group>"; };
+		4CFF69ACBB59298C54E98CBB5D631229 /* Pods-mbedTLS-iOS_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-mbedTLS-iOS_Tests"; path = Pods_mbedTLS_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DBC6B5007509E524761B4FFE47C3F42 /* ssl_ciphersuites.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl_ciphersuites.h; sourceTree = "<group>"; };
+		4F5597CDAC3DE3E9546FFD838540DE26 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		4FA856AF2C7BC1397A718CAA2AFB9CCC /* camellia.c */ = {isa = PBXFileReference; includeInIndex = 1; path = camellia.c; sourceTree = "<group>"; };
+		4FE7EAFC0F62BB0C9D49E35C65F16505 /* debug.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = debug.h; sourceTree = "<group>"; };
+		50E731615C210ABE13F58464487AE49C /* certs.c */ = {isa = PBXFileReference; includeInIndex = 1; path = certs.c; sourceTree = "<group>"; };
+		5239730FB62509221E08D00F29AAE95A /* x509_crl.c */ = {isa = PBXFileReference; includeInIndex = 1; path = x509_crl.c; sourceTree = "<group>"; };
+		551A8FF1889DBD349287CE5DBD364F2F /* arc4.c */ = {isa = PBXFileReference; includeInIndex = 1; path = arc4.c; sourceTree = "<group>"; };
+		55233862F49A62B3428A6699D1E5E14B /* hmac_drbg.c */ = {isa = PBXFileReference; includeInIndex = 1; path = hmac_drbg.c; sourceTree = "<group>"; };
+		55AE744AEF611BEF90ABADC9E9F25C47 /* Pods-mbedTLS-iOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-mbedTLS-iOS_Tests.modulemap"; sourceTree = "<group>"; };
+		55D673FB6CC711D9E490166DB5653832 /* x509_csr.c */ = {isa = PBXFileReference; includeInIndex = 1; path = x509_csr.c; sourceTree = "<group>"; };
+		567463DFA4B7EEE06E2D6AE4FEC7F287 /* padlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = padlock.h; sourceTree = "<group>"; };
+		579ACACEB7DB2AE6FC94D05E867575FE /* cipher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cipher.h; sourceTree = "<group>"; };
+		5893222A0E78E7E7E0049974FB71EC1B /* blowfish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		5D566454576016D67FA0DD864E6A867E /* md5.c */ = {isa = PBXFileReference; includeInIndex = 1; path = md5.c; sourceTree = "<group>"; };
+		5DF36223600F30777FCD1AB933965A56 /* net_sockets.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = net_sockets.h; sourceTree = "<group>"; };
+		603EE25EED04F683A59533A107A0CA5F /* version.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		6094F2A2DD0FC938C4B4EB42631BAE29 /* Pods-mbedTLS-iOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-mbedTLS-iOS_Tests-dummy.m"; sourceTree = "<group>"; };
+		60D1733928E845A47E4390266CD59D78 /* pem.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pem.c; sourceTree = "<group>"; };
+		632436415E5772F47200A57A45A9E16D /* cmac.c */ = {isa = PBXFileReference; includeInIndex = 1; path = cmac.c; sourceTree = "<group>"; };
+		658A4551D37E3723E4A563D093AC4D67 /* aria.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aria.c; sourceTree = "<group>"; };
+		6802B77FA87E9931EE113A1C04D097FB /* asn1write.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = asn1write.h; sourceTree = "<group>"; };
+		68DAE8A15F7E833FDDA7758271C02E8A /* entropy_poll.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = entropy_poll.h; sourceTree = "<group>"; };
+		69110D5ABDD9A585103091D093FA11F9 /* x509.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		6D773FE5E75CE415BA957759889ED8D5 /* ssl_tls.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ssl_tls.c; sourceTree = "<group>"; };
+		6D8825FDCF3C9131BBBA9335FC4750FB /* havege.c */ = {isa = PBXFileReference; includeInIndex = 1; path = havege.c; sourceTree = "<group>"; };
+		6F50F82C6E23A2CC6FEEA201E630EB1D /* camellia.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = camellia.h; sourceTree = "<group>"; };
+		7091887361CF61AE05E468F1FFDE821F /* nist_kw.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = nist_kw.h; sourceTree = "<group>"; };
+		72D0B8D94960835B393E4A67F37E8B83 /* compat-1.3.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "compat-1.3.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73B78A8CDFD8AC5E1E3FD29BD61CE9E9 /* pkcs5.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pkcs5.c; sourceTree = "<group>"; };
+		748075BD040E53951ABFDED671BCBC5D /* platform_util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = platform_util.h; sourceTree = "<group>"; };
+		74AAC9A3BD39CA92B2CE7E40E546FF20 /* platform.c */ = {isa = PBXFileReference; includeInIndex = 1; path = platform.c; sourceTree = "<group>"; };
+		7D0CA35AD09B32F4CF0FFF557C61529F /* threading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = threading.h; sourceTree = "<group>"; };
+		7D1E1319FDF9B5C0252EAA62EE55DC2A /* ecp_curves.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ecp_curves.c; sourceTree = "<group>"; };
+		7D6A7A3F6EDAC342EEFAA808997187FE /* rsa_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rsa_internal.h; sourceTree = "<group>"; };
+		7ED17568D1C94F4FB101340C84CF909D /* pkcs11.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pkcs11.h; sourceTree = "<group>"; };
+		7F106854B8937C7D622C847946A55D24 /* x509_crl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509_crl.h; sourceTree = "<group>"; };
+		806DA58E338907A26C6E372F88A729DA /* x509_crt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = x509_crt.h; sourceTree = "<group>"; };
+		8376444CB0678DF06C2C45C212EC07D5 /* ssl_cookie.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ssl_cookie.c; sourceTree = "<group>"; };
+		83FA14C3D445EF0C9BC1400491658476 /* ccm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ccm.h; sourceTree = "<group>"; };
+		8436517422477DB8C5533C097D1F8981 /* cmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = cmac.h; sourceTree = "<group>"; };
+		868869F1FC4BCAC70A8D3AB7482B268C /* rsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		8C833716167ADE601793559C486ABD15 /* pkcs5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pkcs5.h; sourceTree = "<group>"; };
+		8DDB969040F435245319936ADACD6026 /* x509write_crt.c */ = {isa = PBXFileReference; includeInIndex = 1; path = x509write_crt.c; sourceTree = "<group>"; };
+		8E525EC9B96F00F9EB68494BDA8D6270 /* ssl_cli.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ssl_cli.c; sourceTree = "<group>"; };
+		8F0535EAFC47708C2BE4D06220EC9685 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		8FB2E1499EB1CED7A49D15FB5BE9461D /* sha512.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = sha512.h; sourceTree = "<group>"; };
+		9269E1585F930ABACE22DFE3379AFE7A /* sha256.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sha256.c; sourceTree = "<group>"; };
+		9312114CB29DEC43103C4500185CDB0E /* ctr_drbg.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ctr_drbg.c; sourceTree = "<group>"; };
+		941D1C129FF76CDF298A44874C2FC9C6 /* pk.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pk.h; sourceTree = "<group>"; };
+		94E2069A068418CEA37F7CDC3926BBE0 /* mbedTLS-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mbedTLS-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		952E4CBC6B00B76C0EF632E9DB886066 /* md.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = md.h; sourceTree = "<group>"; };
+		95F087961E08F76A96BAA890594F73D6 /* asn1write.c */ = {isa = PBXFileReference; includeInIndex = 1; path = asn1write.c; sourceTree = "<group>"; };
+		967352642ACD55F531B4609A596E423F /* threading.c */ = {isa = PBXFileReference; includeInIndex = 1; path = threading.c; sourceTree = "<group>"; };
+		9906A93AD29EB65E4CA1E1A04DCE3B14 /* base64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
+		9A1F76DE9C315C6612DA2E129DD7ED54 /* gcm.c */ = {isa = PBXFileReference; includeInIndex = 1; path = gcm.c; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DF8FE01464CB83AC0CC77EF0917962A /* pkcs12.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		A00E8013313B6C48E7FF6FBA3D608F28 /* platform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		A06A3BAA00EB69927E89626FB84A6EB8 /* mbedTLS-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "mbedTLS-iOS.modulemap"; sourceTree = "<group>"; };
+		A0CAAF4396D0885209F4708A1A8C2C94 /* Pods-mbedTLS-iOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mbedTLS-iOS_Tests-Info.plist"; sourceTree = "<group>"; };
+		A5BC2817EC712FFBEEFABB1C024557AA /* Pods-mbedTLS-iOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-mbedTLS-iOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A7DAF8D4A1CCCCC3759E33AB7903B602 /* net_sockets.c */ = {isa = PBXFileReference; includeInIndex = 1; path = net_sockets.c; sourceTree = "<group>"; };
+		A834C03F45FD071D6CC1C27BD9204C02 /* x509.c */ = {isa = PBXFileReference; includeInIndex = 1; path = x509.c; sourceTree = "<group>"; };
+		B0539250C0C8B5D63AF3FD308A8DA27C /* sha512.c */ = {isa = PBXFileReference; includeInIndex = 1; path = sha512.c; sourceTree = "<group>"; };
+		B192266E056CE5D5FF63D20D7CE256F4 /* entropy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		B43AAAE4D5F1E45E1F6B57F39D214483 /* ssl_ciphersuites.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ssl_ciphersuites.c; sourceTree = "<group>"; };
+		B47B0BC31752324A9DCD52D9EA5CA7A6 /* ssl_ticket.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ssl_ticket.c; sourceTree = "<group>"; };
+		B5F1899F34323720A8408128988372F8 /* chacha20.c */ = {isa = PBXFileReference; includeInIndex = 1; path = chacha20.c; sourceTree = "<group>"; };
+		B61A42E2B41C8B3ED9E57E18F4850B9A /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B8664CB7BB570B8F6FEBD96F95160789 /* md2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = md2.h; sourceTree = "<group>"; };
+		BACF2530D33815108E3ADC81035F0684 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		BD14A014312240DFF7C3940D6C596096 /* pkcs12.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pkcs12.c; sourceTree = "<group>"; };
+		BED5C4C780C6680BCD7DE32F7F6E77AC /* aes.c */ = {isa = PBXFileReference; includeInIndex = 1; path = aes.c; sourceTree = "<group>"; };
+		BFB6124A8D2D3C4F6E46AA6914511C82 /* hmac_drbg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = hmac_drbg.h; sourceTree = "<group>"; };
+		C022012FB7D332846D6CAF1C1BD855EB /* pk.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pk.c; sourceTree = "<group>"; };
+		C26B6FBC20805F12B91C1561849829E8 /* entropy_poll.c */ = {isa = PBXFileReference; includeInIndex = 1; path = entropy_poll.c; sourceTree = "<group>"; };
+		C34E404BB5A93CB1A31B6630B3597A81 /* bignum.c */ = {isa = PBXFileReference; includeInIndex = 1; path = bignum.c; sourceTree = "<group>"; };
+		C4BB03FBAC2E8ECCCDBB9278E1DD9FED /* asn1parse.c */ = {isa = PBXFileReference; includeInIndex = 1; path = asn1parse.c; sourceTree = "<group>"; };
+		C55C0F019F21195C26A6C032C120E321 /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; path = entropy.c; sourceTree = "<group>"; };
+		C7639811D6254282709CA3BE6AC56791 /* mbedTLS-iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "mbedTLS-iOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C7BD54163F5F8F3E39ACBE6E53596E75 /* havege.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = havege.h; sourceTree = "<group>"; };
+		CC6E2D828138B1F1EAEF958B6238637D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		CE70A4187FBB7E9EC6BBB07B5B604388 /* blowfish.c */ = {isa = PBXFileReference; includeInIndex = 1; path = blowfish.c; sourceTree = "<group>"; };
+		CEE6324E093D05115DE682C7A3F1064B /* pem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		CF7AC909A9A1B6C26596DB169B5F25E1 /* Pods-mbedTLS-iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-mbedTLS-iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D05CDB7C7756990A4011973F85C233DE /* ssl_cache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl_cache.h; sourceTree = "<group>"; };
+		D28C4C226254470C8E0A5E7B03AB07A9 /* dhm.c */ = {isa = PBXFileReference; includeInIndex = 1; path = dhm.c; sourceTree = "<group>"; };
+		D516C07983F80D135E05306C1A76E008 /* ecdsa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		DB8279327063030F3E7FC1B652159223 /* version_features.c */ = {isa = PBXFileReference; includeInIndex = 1; path = version_features.c; sourceTree = "<group>"; };
+		DFBDE457CA8FED280F5DFBA447E5371C /* platform_util.c */ = {isa = PBXFileReference; includeInIndex = 1; path = platform_util.c; sourceTree = "<group>"; };
+		E1CA5049C51072853D05024117E34627 /* Pods-mbedTLS-iOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-mbedTLS-iOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E2E78C5D7BA506BC1B8406DFEEEFF8A8 /* hkdf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = hkdf.h; sourceTree = "<group>"; };
+		E3339D09D6C4D7916C6F5553DF301B96 /* certs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = certs.h; sourceTree = "<group>"; };
+		E4B2B6835E8FB2AA59D0011D22D35D14 /* ecp.c */ = {isa = PBXFileReference; includeInIndex = 1; path = ecp.c; sourceTree = "<group>"; };
+		E6666AA689AF2BA66898A576F5DB5702 /* padlock.c */ = {isa = PBXFileReference; includeInIndex = 1; path = padlock.c; sourceTree = "<group>"; };
+		E74A8E601E0C61E81A3DF7F45C2F3B34 /* ecp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ecp.h; sourceTree = "<group>"; };
+		E7B238E433642A189F9CB8BCE8FDD3AC /* Pods-mbedTLS-iOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-mbedTLS-iOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		E9931A4214A9AEFC86C47243BD7FE23B /* ripemd160.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ripemd160.h; sourceTree = "<group>"; };
+		EB1E0BF5F196EB0B4AA35CDD66243B9B /* ctr_drbg.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ctr_drbg.h; sourceTree = "<group>"; };
+		EC5D38D8D3C14E13D61043A55BCBF43D /* Pods-mbedTLS-iOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-mbedTLS-iOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EC83E314CE18D1C9140698E57D3FB28F /* gcm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = gcm.h; sourceTree = "<group>"; };
+		EFB410D377BAF21FCEADD5FA121AA305 /* cipher.c */ = {isa = PBXFileReference; includeInIndex = 1; path = cipher.c; sourceTree = "<group>"; };
+		EFD24BDD1446A41565172EE961D288D9 /* md2.c */ = {isa = PBXFileReference; includeInIndex = 1; path = md2.c; sourceTree = "<group>"; };
+		EFD2F60D855547117C59867CF4183734 /* md_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = md_internal.h; sourceTree = "<group>"; };
+		F203E782058DA9D4E7556C5C5845FBD6 /* memory_buffer_alloc.c */ = {isa = PBXFileReference; includeInIndex = 1; path = memory_buffer_alloc.c; sourceTree = "<group>"; };
+		F2BDDACE98E4882E26BFEF8CC6A55F8D /* pk_wrap.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pk_wrap.c; sourceTree = "<group>"; };
+		F3AAE25900A4A8A9552EF5EE58EFECA1 /* arc4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = arc4.h; sourceTree = "<group>"; };
+		F55D628E987DFB8A4A308226A48EC683 /* memory_buffer_alloc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = memory_buffer_alloc.h; sourceTree = "<group>"; };
+		F9E1066A02D190A8C030098F9E7CC897 /* poly1305.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = poly1305.h; sourceTree = "<group>"; };
+		FB4E4732963078A23B1F103A78D0AE5D /* mbedTLS-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mbedTLS-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		FC159A5E92E2F10A4F5A334A06C63B84 /* mbedTLS-iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "mbedTLS-iOS-Info.plist"; sourceTree = "<group>"; };
+		FD584BF2B1BC27CFC68B60D926D35A82 /* ssl_internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ssl_internal.h; sourceTree = "<group>"; };
+		FE62048E6E4F1975ACE94AFC9A9F61AA /* version.c */ = {isa = PBXFileReference; includeInIndex = 1; path = version.c; sourceTree = "<group>"; };
+		FE9FF8E9882F928C21DD4EA803EC5608 /* rsa_internal.c */ = {isa = PBXFileReference; includeInIndex = 1; path = rsa_internal.c; sourceTree = "<group>"; };
+		FF1465DDF27FDA6DCEBA02FCCDEA87E0 /* mbedTLS-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mbedTLS-iOS-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06B27A7F4B6185A33DE17E6C0CFE453A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B951625D1D6FA54E5237994DF37DFD7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B1960F7F2C576D450EAD4E04D76A49A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B19B1497128FD77852D9505FB4573247 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DC12D34373F081247A1FD3B8B2F3EC8 /* mbedtls */ = {
+			isa = PBXGroup;
+			children = (
+				8F0535EAFC47708C2BE4D06220EC9685 /* aes.h */,
+				2EBC7D05DCF839198B11CB1B22279B19 /* aesni.h */,
+				F3AAE25900A4A8A9552EF5EE58EFECA1 /* arc4.h */,
+				10825FD8A7C0FF797846F937452FC9D6 /* aria.h */,
+				02934FF6C8877FA2B96116F3CAC4B292 /* asn1.h */,
+				6802B77FA87E9931EE113A1C04D097FB /* asn1write.h */,
+				9906A93AD29EB65E4CA1E1A04DCE3B14 /* base64.h */,
+				07C8CE985BC120BE611B0071531EB310 /* bignum.h */,
+				5893222A0E78E7E7E0049974FB71EC1B /* blowfish.h */,
+				0C96BA488D81588E245CEFBDE638FF7D /* bn_mul.h */,
+				6F50F82C6E23A2CC6FEEA201E630EB1D /* camellia.h */,
+				83FA14C3D445EF0C9BC1400491658476 /* ccm.h */,
+				E3339D09D6C4D7916C6F5553DF301B96 /* certs.h */,
+				3118D38136DA7C9E0AC3BCA96A7B24CC /* chacha20.h */,
+				3CC9B10502DACC9592057D10A0F163B2 /* chachapoly.h */,
+				08FB1EBCF55FBFB25930B78DE025D414 /* check_config.h */,
+				579ACACEB7DB2AE6FC94D05E867575FE /* cipher.h */,
+				3D57957BB3D9C4CA2CE3145B396EE02D /* cipher_internal.h */,
+				8436517422477DB8C5533C097D1F8981 /* cmac.h */,
+				72D0B8D94960835B393E4A67F37E8B83 /* compat-1.3.h */,
+				B61A42E2B41C8B3ED9E57E18F4850B9A /* config.h */,
+				EB1E0BF5F196EB0B4AA35CDD66243B9B /* ctr_drbg.h */,
+				4FE7EAFC0F62BB0C9D49E35C65F16505 /* debug.h */,
+				00DA4CB8A1DBEBD860D5FAFC360A01D7 /* des.h */,
+				2B367FF54A0825ADCDE1211F16C9D7FF /* dhm.h */,
+				35326A464078F396337ACF012984A16F /* ecdh.h */,
+				D516C07983F80D135E05306C1A76E008 /* ecdsa.h */,
+				4B26BAE62527950852F5DC62ED5E829E /* ecjpake.h */,
+				E74A8E601E0C61E81A3DF7F45C2F3B34 /* ecp.h */,
+				06BE434B243B4417FB6C944CD7AF4542 /* ecp_internal.h */,
+				B192266E056CE5D5FF63D20D7CE256F4 /* entropy.h */,
+				68DAE8A15F7E833FDDA7758271C02E8A /* entropy_poll.h */,
+				0FF91C3729CAA94E342F9889FAEE1187 /* error.h */,
+				EC83E314CE18D1C9140698E57D3FB28F /* gcm.h */,
+				C7BD54163F5F8F3E39ACBE6E53596E75 /* havege.h */,
+				E2E78C5D7BA506BC1B8406DFEEEFF8A8 /* hkdf.h */,
+				BFB6124A8D2D3C4F6E46AA6914511C82 /* hmac_drbg.h */,
+				952E4CBC6B00B76C0EF632E9DB886066 /* md.h */,
+				B8664CB7BB570B8F6FEBD96F95160789 /* md2.h */,
+				1E0D0D76BEFD7D7333FFD0B02BFA7941 /* md4.h */,
+				BACF2530D33815108E3ADC81035F0684 /* md5.h */,
+				EFD2F60D855547117C59867CF4183734 /* md_internal.h */,
+				F55D628E987DFB8A4A308226A48EC683 /* memory_buffer_alloc.h */,
+				3FFE18CACE9C0161650E223FA35A55D9 /* net.h */,
+				5DF36223600F30777FCD1AB933965A56 /* net_sockets.h */,
+				7091887361CF61AE05E468F1FFDE821F /* nist_kw.h */,
+				3EAD5757A8409A44999AF56453B4CECB /* oid.h */,
+				567463DFA4B7EEE06E2D6AE4FEC7F287 /* padlock.h */,
+				CEE6324E093D05115DE682C7A3F1064B /* pem.h */,
+				941D1C129FF76CDF298A44874C2FC9C6 /* pk.h */,
+				31D1BEF5418429083BEF49D7D6E85B20 /* pk_internal.h */,
+				7ED17568D1C94F4FB101340C84CF909D /* pkcs11.h */,
+				9DF8FE01464CB83AC0CC77EF0917962A /* pkcs12.h */,
+				8C833716167ADE601793559C486ABD15 /* pkcs5.h */,
+				A00E8013313B6C48E7FF6FBA3D608F28 /* platform.h */,
+				3627A47CEBFA041D79607761A8B2B248 /* platform_time.h */,
+				748075BD040E53951ABFDED671BCBC5D /* platform_util.h */,
+				F9E1066A02D190A8C030098F9E7CC897 /* poly1305.h */,
+				E9931A4214A9AEFC86C47243BD7FE23B /* ripemd160.h */,
+				868869F1FC4BCAC70A8D3AB7482B268C /* rsa.h */,
+				7D6A7A3F6EDAC342EEFAA808997187FE /* rsa_internal.h */,
+				4F5597CDAC3DE3E9546FFD838540DE26 /* sha1.h */,
+				2BA0BC09C2971C94145F56051E46056F /* sha256.h */,
+				8FB2E1499EB1CED7A49D15FB5BE9461D /* sha512.h */,
+				1C5553130DBED022BDB438EA6C29F5B0 /* ssl.h */,
+				D05CDB7C7756990A4011973F85C233DE /* ssl_cache.h */,
+				4DBC6B5007509E524761B4FFE47C3F42 /* ssl_ciphersuites.h */,
+				449B8230BA4A4275812F7BE76DBA4738 /* ssl_cookie.h */,
+				FD584BF2B1BC27CFC68B60D926D35A82 /* ssl_internal.h */,
+				0B4717DDE0E308D57BB9939C8FCD97BB /* ssl_ticket.h */,
+				7D0CA35AD09B32F4CF0FFF557C61529F /* threading.h */,
+				11A9FD83577F8AA00F84FF5B1C10AB3F /* timing.h */,
+				603EE25EED04F683A59533A107A0CA5F /* version.h */,
+				69110D5ABDD9A585103091D093FA11F9 /* x509.h */,
+				7F106854B8937C7D622C847946A55D24 /* x509_crl.h */,
+				806DA58E338907A26C6E372F88A729DA /* x509_crt.h */,
+				084B1DB81D2F0B8883FF10619387648E /* x509_csr.h */,
+				332F792D6A15F25E9D8CC82FBE188C4C /* xtea.h */,
+			);
+			name = mbedtls;
+			path = mbedtls;
+			sourceTree = "<group>";
+		};
+		1E4BF1F55662575DB4C5049FAC7ADBB6 /* Pods-mbedTLS-iOS_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				55AE744AEF611BEF90ABADC9E9F25C47 /* Pods-mbedTLS-iOS_Tests.modulemap */,
+				EC5D38D8D3C14E13D61043A55BCBF43D /* Pods-mbedTLS-iOS_Tests-acknowledgements.markdown */,
+				E1CA5049C51072853D05024117E34627 /* Pods-mbedTLS-iOS_Tests-acknowledgements.plist */,
+				6094F2A2DD0FC938C4B4EB42631BAE29 /* Pods-mbedTLS-iOS_Tests-dummy.m */,
+				A5BC2817EC712FFBEEFABB1C024557AA /* Pods-mbedTLS-iOS_Tests-frameworks.sh */,
+				A0CAAF4396D0885209F4708A1A8C2C94 /* Pods-mbedTLS-iOS_Tests-Info.plist */,
+				E7B238E433642A189F9CB8BCE8FDD3AC /* Pods-mbedTLS-iOS_Tests-umbrella.h */,
+				4700AF7689171E8DA45F2A85D9C8E144 /* Pods-mbedTLS-iOS_Tests.debug.xcconfig */,
+				CF7AC909A9A1B6C26596DB169B5F25E1 /* Pods-mbedTLS-iOS_Tests.release.xcconfig */,
+			);
+			name = "Pods-mbedTLS-iOS_Tests";
+			path = "Target Support Files/Pods-mbedTLS-iOS_Tests";
+			sourceTree = "<group>";
+		};
+		263788657BFEA9BF59DC861F8E6BE998 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D9E5F83AEA943C0DC2BCBE2EEE9236 /* mbedTLS-iOS */,
+				4CFF69ACBB59298C54E98CBB5D631229 /* Pods-mbedTLS-iOS_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CB549FEDAE2717F8B0E1D8D49BD4211 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E4BF1F55662575DB4C5049FAC7ADBB6 /* Pods-mbedTLS-iOS_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		A365FBF02D2826740011DC6E4D01671C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				37491796018E24084845E3861DD92A91 /* LICENSE */,
+				C7639811D6254282709CA3BE6AC56791 /* mbedTLS-iOS.podspec */,
+				CC6E2D828138B1F1EAEF958B6238637D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A82C40CDB4B120E89D356B42B4B12CBB /* mbedTLS-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				066353F976AD22450A4F82E7160758E1 /* ReplaceMe.m */,
+				EDA5B9280BF96BC626B2CA7E5F51B46A /* include */,
+				BE1CB223407C576A4B991B096536EA49 /* library */,
+				A365FBF02D2826740011DC6E4D01671C /* Pod */,
+				ABC5F1EA961E9BDC9D13477AFC260BF1 /* Support Files */,
+			);
+			name = "mbedTLS-iOS";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		ABC5F1EA961E9BDC9D13477AFC260BF1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A06A3BAA00EB69927E89626FB84A6EB8 /* mbedTLS-iOS.modulemap */,
+				1DD6A08EC427517F5B19BE1E93B83911 /* mbedTLS-iOS-dummy.m */,
+				FC159A5E92E2F10A4F5A334A06C63B84 /* mbedTLS-iOS-Info.plist */,
+				318F1CC6AAE49F434266BE3C64D029E2 /* mbedTLS-iOS-prefix.pch */,
+				FF1465DDF27FDA6DCEBA02FCCDEA87E0 /* mbedTLS-iOS-umbrella.h */,
+				FB4E4732963078A23B1F103A78D0AE5D /* mbedTLS-iOS.debug.xcconfig */,
+				94E2069A068418CEA37F7CDC3926BBE0 /* mbedTLS-iOS.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/mbedTLS-iOS";
+			sourceTree = "<group>";
+		};
+		BE1CB223407C576A4B991B096536EA49 /* library */ = {
+			isa = PBXGroup;
+			children = (
+				BED5C4C780C6680BCD7DE32F7F6E77AC /* aes.c */,
+				416D1824B022F85F3F87F048E7ADCB96 /* aesni.c */,
+				551A8FF1889DBD349287CE5DBD364F2F /* arc4.c */,
+				658A4551D37E3723E4A563D093AC4D67 /* aria.c */,
+				C4BB03FBAC2E8ECCCDBB9278E1DD9FED /* asn1parse.c */,
+				95F087961E08F76A96BAA890594F73D6 /* asn1write.c */,
+				216312CE131D2C0AE7694C1D6FD23512 /* base64.c */,
+				C34E404BB5A93CB1A31B6630B3597A81 /* bignum.c */,
+				CE70A4187FBB7E9EC6BBB07B5B604388 /* blowfish.c */,
+				4FA856AF2C7BC1397A718CAA2AFB9CCC /* camellia.c */,
+				3DFFBBBFBDB9ADE660EFBAA1F4E54018 /* ccm.c */,
+				50E731615C210ABE13F58464487AE49C /* certs.c */,
+				B5F1899F34323720A8408128988372F8 /* chacha20.c */,
+				126D9221926666317C9FC53E67533746 /* chachapoly.c */,
+				EFB410D377BAF21FCEADD5FA121AA305 /* cipher.c */,
+				0E91AE1FBBCDC84FB92B6C3EF2381963 /* cipher_wrap.c */,
+				632436415E5772F47200A57A45A9E16D /* cmac.c */,
+				9312114CB29DEC43103C4500185CDB0E /* ctr_drbg.c */,
+				16459D0D59853890A48E17369636091C /* debug.c */,
+				2943176A5A2C84CA6034D784274AB2C9 /* des.c */,
+				D28C4C226254470C8E0A5E7B03AB07A9 /* dhm.c */,
+				232BDC83A73219FC99FDA011E2EDFD7E /* ecdh.c */,
+				12E0C57B267D07E93568AFA68A88B4E1 /* ecdsa.c */,
+				1C7B7A2A3E5BF79D018E6F618A553B7F /* ecjpake.c */,
+				E4B2B6835E8FB2AA59D0011D22D35D14 /* ecp.c */,
+				7D1E1319FDF9B5C0252EAA62EE55DC2A /* ecp_curves.c */,
+				C55C0F019F21195C26A6C032C120E321 /* entropy.c */,
+				C26B6FBC20805F12B91C1561849829E8 /* entropy_poll.c */,
+				2ECCA51172B84C1F872BA46F9DDBC74E /* error.c */,
+				9A1F76DE9C315C6612DA2E129DD7ED54 /* gcm.c */,
+				6D8825FDCF3C9131BBBA9335FC4750FB /* havege.c */,
+				1143B7D0148BEBCF68F010686935226B /* hkdf.c */,
+				55233862F49A62B3428A6699D1E5E14B /* hmac_drbg.c */,
+				0C51127E3F13AD1D4E6EE3F0EC3490D5 /* md.c */,
+				EFD24BDD1446A41565172EE961D288D9 /* md2.c */,
+				041FED889F59FF2775768CFA70B6E9D5 /* md4.c */,
+				5D566454576016D67FA0DD864E6A867E /* md5.c */,
+				1E75325C373394B0E804F5B23B7255E1 /* md_wrap.c */,
+				F203E782058DA9D4E7556C5C5845FBD6 /* memory_buffer_alloc.c */,
+				A7DAF8D4A1CCCCC3759E33AB7903B602 /* net_sockets.c */,
+				416F685E01D3459094E92D4A2B7EDFAF /* nist_kw.c */,
+				10B244462A089FA0B8033AFEA9366ABB /* oid.c */,
+				E6666AA689AF2BA66898A576F5DB5702 /* padlock.c */,
+				60D1733928E845A47E4390266CD59D78 /* pem.c */,
+				C022012FB7D332846D6CAF1C1BD855EB /* pk.c */,
+				F2BDDACE98E4882E26BFEF8CC6A55F8D /* pk_wrap.c */,
+				39C3FD70FC7DF53552EDA373DB019B1E /* pkcs11.c */,
+				BD14A014312240DFF7C3940D6C596096 /* pkcs12.c */,
+				73B78A8CDFD8AC5E1E3FD29BD61CE9E9 /* pkcs5.c */,
+				2F392D0E7F361E08FA8989C399803BBE /* pkparse.c */,
+				41F71CAF454971C622E98E8B83D37F55 /* pkwrite.c */,
+				74AAC9A3BD39CA92B2CE7E40E546FF20 /* platform.c */,
+				DFBDE457CA8FED280F5DFBA447E5371C /* platform_util.c */,
+				129B9C83BB5324275D708EF0195CF31A /* poly1305.c */,
+				027D5EA1434C05FABA2DB08E758741E6 /* ripemd160.c */,
+				0AA0F8E2F15F900B0EF9B9F228CE9F9F /* rsa.c */,
+				FE9FF8E9882F928C21DD4EA803EC5608 /* rsa_internal.c */,
+				0483E1B325B24844078244720F3BD1D0 /* sha1.c */,
+				9269E1585F930ABACE22DFE3379AFE7A /* sha256.c */,
+				B0539250C0C8B5D63AF3FD308A8DA27C /* sha512.c */,
+				27D00A30D7A13E7EAC1B1623D6489A1E /* ssl_cache.c */,
+				B43AAAE4D5F1E45E1F6B57F39D214483 /* ssl_ciphersuites.c */,
+				8E525EC9B96F00F9EB68494BDA8D6270 /* ssl_cli.c */,
+				8376444CB0678DF06C2C45C212EC07D5 /* ssl_cookie.c */,
+				187358DBDB794507882D773E79E21E5D /* ssl_srv.c */,
+				B47B0BC31752324A9DCD52D9EA5CA7A6 /* ssl_ticket.c */,
+				6D773FE5E75CE415BA957759889ED8D5 /* ssl_tls.c */,
+				967352642ACD55F531B4609A596E423F /* threading.c */,
+				0AFD197366C4542BBA8F57A2BE2D1E79 /* timing.c */,
+				FE62048E6E4F1975ACE94AFC9A9F61AA /* version.c */,
+				DB8279327063030F3E7FC1B652159223 /* version_features.c */,
+				A834C03F45FD071D6CC1C27BD9204C02 /* x509.c */,
+				04984C6CEDB8EA1B25A00F6395D6EE33 /* x509_create.c */,
+				5239730FB62509221E08D00F29AAE95A /* x509_crl.c */,
+				0FBFF4DBCFE2C421692993836E0C5EA7 /* x509_crt.c */,
+				55D673FB6CC711D9E490166DB5653832 /* x509_csr.c */,
+				8DDB969040F435245319936ADACD6026 /* x509write_crt.c */,
+				030CB1C42B72C2420FB2D14732A4F705 /* x509write_csr.c */,
+				13918C69917E555FF531C4D85DDA002E /* xtea.c */,
+			);
+			name = library;
+			path = "mbedTLS-iOS/Classes/library";
+			sourceTree = "<group>";
+		};
+		CCD31473740F563C76A788340E801715 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A82C40CDB4B120E89D356B42B4B12CBB /* mbedTLS-iOS */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				CCD31473740F563C76A788340E801715 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				263788657BFEA9BF59DC861F8E6BE998 /* Products */,
+				2CB549FEDAE2717F8B0E1D8D49BD4211 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDA5B9280BF96BC626B2CA7E5F51B46A /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0DC12D34373F081247A1FD3B8B2F3EC8 /* mbedtls */,
+			);
+			name = include;
+			path = "mbedTLS-iOS/Classes/include";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06977626FA388C22AF3A9415419BB204 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2FF7DB01813359A8E3776186BC7C0E /* Pods-mbedTLS-iOS_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD860BA86C1064F2FAB5F2F87862DB1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				722C1D28D475D9D2D1836EF8DA900D09 /* aes.h in Headers */,
+				A5120791ABB8C9FF1450E489AE80D128 /* aesni.h in Headers */,
+				38625B39C68FA96E757A6060C3470C3A /* arc4.h in Headers */,
+				6BFB86C42C6E6D1D08324C144F075838 /* aria.h in Headers */,
+				0EFD074DA0E2F6DBDC3368F12DFD8B9C /* asn1.h in Headers */,
+				A7D668D1B8CB809F82CFB792EFA95627 /* asn1write.h in Headers */,
+				97E509EB1927F6B1E9CEAC123D7C34DB /* base64.h in Headers */,
+				4E8013322D4456165030ED7A260C6EDA /* bignum.h in Headers */,
+				F00B553CF76F0E5D7728EE0C121AEE5C /* blowfish.h in Headers */,
+				05CE61E92506CF3362A7D5B2CF5FFDB6 /* bn_mul.h in Headers */,
+				6CFB4214CBBC8D3A07F76AE8E3B6F96E /* camellia.h in Headers */,
+				E8F33987C9A663342F1F49945721BF6A /* ccm.h in Headers */,
+				D7ECDEEEBDBD8D255D1FA7005A246ECB /* certs.h in Headers */,
+				320FB149CF1F584AEE9230468392CEE7 /* chacha20.h in Headers */,
+				E31B5AD3DE3D1C1D20D70EACAF9902A5 /* chachapoly.h in Headers */,
+				14F5CF84B15F125AB8BE3D788318BAB1 /* check_config.h in Headers */,
+				19E35EDE0E5750801D59E7A7CDE7CCA2 /* cipher.h in Headers */,
+				107972E5568FC96D0637FD5BD1DF3678 /* cipher_internal.h in Headers */,
+				ECC9EAF79A8C67369E820D79AE488A60 /* cmac.h in Headers */,
+				7AC08661114F16092DAC69E652D0A747 /* compat-1.3.h in Headers */,
+				1B48BAC8D2EC422775F76FA130E517B1 /* config.h in Headers */,
+				546E2861CB22AF7CCB57BE8A617316FF /* ctr_drbg.h in Headers */,
+				13AC866DDD86280AA2FB01900B5AFCF7 /* debug.h in Headers */,
+				11BF7871ECBE1783C2873EB58C867345 /* des.h in Headers */,
+				6F01EA2D4840F09A709C4F201AAA8C6F /* dhm.h in Headers */,
+				E29509F82044C765C31C5FA951C7B4E0 /* ecdh.h in Headers */,
+				7C166BCD304FEC3902C6676B37757008 /* ecdsa.h in Headers */,
+				68F1102F0C13BC71B49B994512ED64E5 /* ecjpake.h in Headers */,
+				9F11FE462EB4975DC225638FF103C756 /* ecp.h in Headers */,
+				374724D40C298F8CCDBF6FE6AD7F0D84 /* ecp_internal.h in Headers */,
+				CAAD0E583685833ADFC942DE7E9BEC2F /* entropy.h in Headers */,
+				B8A4D5CFB327B2BF8DD1748A2CEDB711 /* entropy_poll.h in Headers */,
+				99DD0F42E0DEAC2EB52DF83B968CE2F3 /* error.h in Headers */,
+				F050B60EAFC2EAC012E6B4C4952221AD /* gcm.h in Headers */,
+				DD9CCC5DCC871CD7F38740E73758EC2F /* havege.h in Headers */,
+				932C156752EBC040C2758C1766CB9548 /* hkdf.h in Headers */,
+				431B145FF058CD4D3D66F81DD7B831E8 /* hmac_drbg.h in Headers */,
+				BFCFB2309381099F2B8D5183D2870CA4 /* mbedTLS-iOS-umbrella.h in Headers */,
+				63C5CF5C2A5A55A5692DA47269F91E4A /* md.h in Headers */,
+				C8FDAF2C326D3C59369B5712CD629B54 /* md2.h in Headers */,
+				4B9EF5C984FC04F67142758E8DCAD864 /* md4.h in Headers */,
+				ED3EE9290E3E721D19977CB67DDDE79D /* md5.h in Headers */,
+				EE3C37CDF32083863A77F0FAA9B85999 /* md_internal.h in Headers */,
+				C5A5DFA8FE53D1D4126EDEC8B4F3B22E /* memory_buffer_alloc.h in Headers */,
+				E0C630665BD1C2B675E29160D4916322 /* net.h in Headers */,
+				3687F5FAA659E1AA7A84EB2B776F84C1 /* net_sockets.h in Headers */,
+				FD1C9635876EF4057A2AE364DCD6EED5 /* nist_kw.h in Headers */,
+				E3B85D87303146F9225144853A3A129C /* oid.h in Headers */,
+				BF267FCD9A698AA87B5789B0E9756FD0 /* padlock.h in Headers */,
+				0B0347EA4D56420758511BF3BB38B8CD /* pem.h in Headers */,
+				59F2BCE7DB141F0EF2BF280F6126237F /* pk.h in Headers */,
+				B4210C94B17979A6C3E64D42486F6FC2 /* pk_internal.h in Headers */,
+				0D43682C16F4B6DE3E0A48A6CE4232B5 /* pkcs11.h in Headers */,
+				CD25D3E683CD157737342894BBEE736A /* pkcs12.h in Headers */,
+				A7195799AD31A43E3FACEE74FCA18B9C /* pkcs5.h in Headers */,
+				AB8301B7E775574454C5931C4FB6B7F1 /* platform.h in Headers */,
+				70A754F6C08CACE8A58B76BE0C7F8C03 /* platform_time.h in Headers */,
+				E9E7EAACE73498F119DDD47117666F0D /* platform_util.h in Headers */,
+				909A275585B8C8EF8DE9B022FDDC5542 /* poly1305.h in Headers */,
+				DEB116BA4F19FC098989C718EA6A1894 /* ripemd160.h in Headers */,
+				A11D56D4226EEA64030843E9E33C8D29 /* rsa.h in Headers */,
+				986D696F9AD63100102393C13F6D3DFC /* rsa_internal.h in Headers */,
+				00CE12BBE8CB6077C717A32B6DD2336B /* sha1.h in Headers */,
+				3367955A6AB6DEAE8C75084CE9C3C38E /* sha256.h in Headers */,
+				F52E9F027A74B234B4E8683029628EFD /* sha512.h in Headers */,
+				3F4B43E8B131D675E17E1D06AD7BBCF1 /* ssl.h in Headers */,
+				9DA4CB20844FE566516048E04C84ABAA /* ssl_cache.h in Headers */,
+				68D0B218122B894E99EC1DA91652F2CB /* ssl_ciphersuites.h in Headers */,
+				FAECF66C5C2D61F8D7076E9AA6AD6CF4 /* ssl_cookie.h in Headers */,
+				E55D3037C25DBB27F692417283B49049 /* ssl_internal.h in Headers */,
+				DA0E39735F1A5C5AE00C7C864325F293 /* ssl_ticket.h in Headers */,
+				A5F7A4A19DDD2A05BA4325EF60BDFF00 /* threading.h in Headers */,
+				95E9255BD1E604F758245E5E45FD2A87 /* timing.h in Headers */,
+				45062F256E2A116DC543433696C222AF /* version.h in Headers */,
+				EDDE4F0927C92B3B11245F2F4D15C53E /* x509.h in Headers */,
+				B149D70561883DD1390C3E459B9C7D96 /* x509_crl.h in Headers */,
+				6F993F88E9D28647F77C5D110AD0E584 /* x509_crt.h in Headers */,
+				FB1D2A0745BE99FE531D3838B03E0800 /* x509_csr.h in Headers */,
+				15FB2BD14D83C42D2D14E0F28DCF66D7 /* xtea.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		81B7B865E7F83CDEC1775778556CEBDC /* mbedTLS-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E073F3E3E9968C91C7C9020DB0A9DDE2 /* Build configuration list for PBXNativeTarget "mbedTLS-iOS" */;
+			buildPhases = (
+				DD860BA86C1064F2FAB5F2F87862DB1A /* Headers */,
+				0413FD75EE02B2EFB34DF128B869383E /* Sources */,
+				06B27A7F4B6185A33DE17E6C0CFE453A /* Frameworks */,
+				FB0DBFB11880A8ADEE3C1E74517DF3D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mbedTLS-iOS";
+			productName = mbedTLS_iOS;
+			productReference = 22D9E5F83AEA943C0DC2BCBE2EEE9236 /* mbedTLS-iOS */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFA5DDDCFC9803875CC7781E7FAD2F42 /* Pods-mbedTLS-iOS_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B329ED41AA38CD9D8E2FF30C69CFAF8D /* Build configuration list for PBXNativeTarget "Pods-mbedTLS-iOS_Tests" */;
+			buildPhases = (
+				06977626FA388C22AF3A9415419BB204 /* Headers */,
+				241BDF17A314D073D2C4FA93AC16ABBD /* Sources */,
+				2B1960F7F2C576D450EAD4E04D76A49A /* Frameworks */,
+				74CE9AFEB5D0F114B5D16363F7287F03 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				36AF6781C02D61CECF2BF5526E83A25D /* PBXTargetDependency */,
+			);
+			name = "Pods-mbedTLS-iOS_Tests";
+			productName = Pods_mbedTLS_iOS_Tests;
+			productReference = 4CFF69ACBB59298C54E98CBB5D631229 /* Pods-mbedTLS-iOS_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 263788657BFEA9BF59DC861F8E6BE998 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81B7B865E7F83CDEC1775778556CEBDC /* mbedTLS-iOS */,
+				DFA5DDDCFC9803875CC7781E7FAD2F42 /* Pods-mbedTLS-iOS_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74CE9AFEB5D0F114B5D16363F7287F03 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0DBFB11880A8ADEE3C1E74517DF3D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0413FD75EE02B2EFB34DF128B869383E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F98881D4BA96540E1C1316FD44035737 /* aes.c in Sources */,
+				1CBEB976B93D091C9A1B6F6192E50A5A /* aesni.c in Sources */,
+				516EE33D3796DA2A8B2007C512658393 /* arc4.c in Sources */,
+				6ED965B484C87644925F6228E0BDEFCC /* aria.c in Sources */,
+				998ABE71101DF891C79AA6EB9694F581 /* asn1parse.c in Sources */,
+				5B0F285412081F108C32F193892E32F5 /* asn1write.c in Sources */,
+				D2106B2E120BEB270D9C2B1A04A9E412 /* base64.c in Sources */,
+				14DB005DE6B00194C422DB6E36140789 /* bignum.c in Sources */,
+				08784E3DC746B01E11925BA16389D87C /* blowfish.c in Sources */,
+				A242A2DD61A9A96566474D66B1145AC8 /* camellia.c in Sources */,
+				5D2D2B0FEA04B3550C3A1FEDF433C577 /* ccm.c in Sources */,
+				9507738C44E956036785DB99DAE9CF4F /* certs.c in Sources */,
+				8929820D86EC8B67A49D31CD0B595DBC /* chacha20.c in Sources */,
+				BA808403739AFF63EB81AA4D36368D1B /* chachapoly.c in Sources */,
+				06493DC68B74974E7F92407C5F4D89E6 /* cipher.c in Sources */,
+				571E0C8748150736100D55FE611A6F3E /* cipher_wrap.c in Sources */,
+				6E1237A9FC6F420579DA18489B0C7A57 /* cmac.c in Sources */,
+				E9EFC657CA91F7331433C260D1783345 /* ctr_drbg.c in Sources */,
+				3FDAA0D0FB76DF5296A8A947105D72E2 /* debug.c in Sources */,
+				F96DC547543C34EBA5275BC17D8A3E3A /* des.c in Sources */,
+				48D3F252DF43E24CCB57A7BED58BE850 /* dhm.c in Sources */,
+				2495D06A6FDAC16B708A6AAC043D5AE1 /* ecdh.c in Sources */,
+				93002437311F72365542137E53F5C407 /* ecdsa.c in Sources */,
+				8F676D5690B4B0C055AE4B104C261AFC /* ecjpake.c in Sources */,
+				F94CC1989B6A657ABB860F80918ABBDA /* ecp.c in Sources */,
+				1C676209EB82ACA10355A95601F7BCD4 /* ecp_curves.c in Sources */,
+				676D0B370E02E15D831650C26491C06B /* entropy.c in Sources */,
+				D9373D2075681B2618BCE3B6D79CFBE7 /* entropy_poll.c in Sources */,
+				7E220AC5F8611C2ED8D1BDF06A5E907C /* error.c in Sources */,
+				04CCB6947904F11DDBDAD9095C497EE6 /* gcm.c in Sources */,
+				74A6102E702D29E0853CA22E97E4D13A /* havege.c in Sources */,
+				FC2DCA380E13A32BD1E8BBD710063432 /* hkdf.c in Sources */,
+				7A8844CACF9E2ECB9D4F16F4254E5C72 /* hmac_drbg.c in Sources */,
+				AC140C0D04CE21F56786A2348EACC7CA /* mbedTLS-iOS-dummy.m in Sources */,
+				E867BD2A84438811C8F64700B13768BC /* md.c in Sources */,
+				96FC7D9B031E1C695E383C94D6946666 /* md2.c in Sources */,
+				1B84F0688729313AD9C5B1AFE4E2F745 /* md4.c in Sources */,
+				903D89412BA7E9A30039A8DC60733EE3 /* md5.c in Sources */,
+				A820545A06A94C94A465C7E5DECCA6C9 /* md_wrap.c in Sources */,
+				DEE7B2845E20F26497481988CE1A3BAB /* memory_buffer_alloc.c in Sources */,
+				C19F97CBC46AE35C8FD5DF0D6F8DC3EA /* net_sockets.c in Sources */,
+				5E7AA5F960C345B9C9592A1746438056 /* nist_kw.c in Sources */,
+				424D7ACFE60A4388F5C0EABA961AE763 /* oid.c in Sources */,
+				AC080415868FA220F32621BD13F0D1D6 /* padlock.c in Sources */,
+				A88E39DCDE2A71C4316B9970E394169E /* pem.c in Sources */,
+				1F3737A276D1A2FA595629EF68B982AC /* pk.c in Sources */,
+				4D13F48704F58342710B1FC9A6DBA6A3 /* pk_wrap.c in Sources */,
+				1AC75053815C8EC4F2A94744A67C0BEB /* pkcs11.c in Sources */,
+				DFFC531143C6363B7316532A0F3C1547 /* pkcs12.c in Sources */,
+				B61B0B9C60B7A75B6B8CD88A979B077D /* pkcs5.c in Sources */,
+				48FFD7EFED9DC3606B663CE528153885 /* pkparse.c in Sources */,
+				7D8F7F57ABF6EC8CB6DA6EF88407036E /* pkwrite.c in Sources */,
+				65F058488087E62485BC233364015771 /* platform.c in Sources */,
+				BE9AD82A821B1CF302895788A9ECFB8E /* platform_util.c in Sources */,
+				AD59418BD3771AE4157D37360C336705 /* poly1305.c in Sources */,
+				22AEDAE4111CE2D0172D68028B13AB57 /* ReplaceMe.m in Sources */,
+				94D051F76283B697829843AA7A29E62B /* ripemd160.c in Sources */,
+				B30478371CBBF7F4D5A8E2A24FB5262A /* rsa.c in Sources */,
+				FD036516E9129A72F82970625DB55715 /* rsa_internal.c in Sources */,
+				EE389CC5FEF880479CEA2E4241585D93 /* sha1.c in Sources */,
+				84C2E17DE6DD241CF0136705400ADD53 /* sha256.c in Sources */,
+				1F3C2B7FC3C05D06214D8437BE057465 /* sha512.c in Sources */,
+				485DA77DDF008A761E9544D709939AD7 /* ssl_cache.c in Sources */,
+				6F38C331115C6505EDA185980A62249D /* ssl_ciphersuites.c in Sources */,
+				EE274C794CA325416016F2B9EB76114F /* ssl_cli.c in Sources */,
+				580BA5A1CA34C8F138852C450BB524FE /* ssl_cookie.c in Sources */,
+				3135A25B11C59873458607F2A05DCCBE /* ssl_srv.c in Sources */,
+				B874A94EFE6908905E8433EB4AECBE49 /* ssl_ticket.c in Sources */,
+				56D47D133CF02318450F442EB6336D14 /* ssl_tls.c in Sources */,
+				20A06A9BF5F3387659D881A4DCEBB73E /* threading.c in Sources */,
+				577C7C4DECCE0D22C4B6A630DF0FE67C /* timing.c in Sources */,
+				BAC82147FCE5F25B61B440984B948F2A /* version.c in Sources */,
+				F4DFAE8EAACC1688BC5768F9F044ACE2 /* version_features.c in Sources */,
+				768CC2C39F744CED43DAFB7F52B6D75A /* x509.c in Sources */,
+				BE57063D94BA7B3944A28BC9D9D7D320 /* x509_create.c in Sources */,
+				1C2C7AE1947F1AFDE97676F8EB590B20 /* x509_crl.c in Sources */,
+				A1D73225FAE6BDFD361ABC4C839BF41D /* x509_crt.c in Sources */,
+				D560620FD10E1762E3F4775F7CEA6224 /* x509_csr.c in Sources */,
+				5D5455096A606BA77C1E7275F974CAEB /* x509write_crt.c in Sources */,
+				EDECC7A66E4ACFAFFFAF725B4F119295 /* x509write_csr.c in Sources */,
+				FEF88FEA26948AF4C2359E6E666947DD /* xtea.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241BDF17A314D073D2C4FA93AC16ABBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6DD950C3597F557AFD0356C878151B0 /* Pods-mbedTLS-iOS_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		36AF6781C02D61CECF2BF5526E83A25D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "mbedTLS-iOS";
+			target = 81B7B865E7F83CDEC1775778556CEBDC /* mbedTLS-iOS */;
+			targetProxy = 83252F95DF22456B1E19D613E53F63C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		569A221D72CA5010CB995074089B8EDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4700AF7689171E8DA45F2A85D9C8E144 /* Pods-mbedTLS-iOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-mbedTLS-iOS_Tests/Pods-mbedTLS-iOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-mbedTLS-iOS_Tests/Pods-mbedTLS-iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		985BE57F6C4CD6EF69606D3CA3FEE6FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB4E4732963078A23B1F103A78D0AE5D /* mbedTLS-iOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/mbedTLS-iOS/mbedTLS-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/mbedTLS-iOS/mbedTLS-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/mbedTLS-iOS/mbedTLS-iOS.modulemap";
+				PRODUCT_MODULE_NAME = mbedTLS_iOS;
+				PRODUCT_NAME = mbedTLS_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E4160CFB959714EE396166E896610F65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94E2069A068418CEA37F7CDC3926BBE0 /* mbedTLS-iOS.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/mbedTLS-iOS/mbedTLS-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/mbedTLS-iOS/mbedTLS-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/mbedTLS-iOS/mbedTLS-iOS.modulemap";
+				PRODUCT_MODULE_NAME = mbedTLS_iOS;
+				PRODUCT_NAME = mbedTLS_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA6ABD36F43815B37D63A78030529344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF7AC909A9A1B6C26596DB169B5F25E1 /* Pods-mbedTLS-iOS_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-mbedTLS-iOS_Tests/Pods-mbedTLS-iOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-mbedTLS-iOS_Tests/Pods-mbedTLS-iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B329ED41AA38CD9D8E2FF30C69CFAF8D /* Build configuration list for PBXNativeTarget "Pods-mbedTLS-iOS_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				569A221D72CA5010CB995074089B8EDC /* Debug */,
+				FA6ABD36F43815B37D63A78030529344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E073F3E3E9968C91C7C9020DB0A9DDE2 /* Build configuration list for PBXNativeTarget "mbedTLS-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				985BE57F6C4CD6EF69606D3CA3FEE6FF /* Debug */,
+				E4160CFB959714EE396166E896610F65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
